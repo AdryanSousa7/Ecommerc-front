@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatórios - E-commerce</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>E-commerce</h1>
+      <ul>
+        <li><a href="./index.html">Produtos</a></li>
+        <li><a href="./users.html">Usuários</a></li>
+        <li><a href="./orders.html">Pedidos</a></li>
+        <li><a href="./reports.html" class="active">Relatórios</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <h2>Relatórios</h2>
+    <section id="report-list">
+      <p>Carregando relatórios...</p>
+    </section>
+  </main>
+  <script src="../js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => loadReports());
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuários - E-commerce</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>E-commerce</h1>
+      <ul>
+        <li><a href="./index.html">Produtos</a></li>
+        <li><a href="./users.html" class="active">Usuários</a></li>
+        <li><a href="./orders.html">Pedidos</a></li>
+        <li><a href="./reports.html">Relatórios</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <h2>Usuários</h2>
+    <section class="user-form">
+      <h3>Adicionar Usuário</h3>
+      <form id="user-form">
+        <input type="text" id="user-name" placeholder="Nome" required>
+        <input type="email" id="user-email" placeholder="Email" required>
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+    <section id="user-list"></section>
+  </main>
+  <script src="../js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => loadUsers());
+  </script>
+</body>
+</html>

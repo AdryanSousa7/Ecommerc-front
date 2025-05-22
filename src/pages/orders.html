@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos - E-commerce</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>E-commerce</h1>
+      <ul>
+        <li><a href="./index.html">Produtos</a></li>
+        <li><a href="./users.html">Usuários</a></li>
+        <li><a href="./orders.html" class="active">Pedidos</a></li>
+        <li><a href="./reports.html">Relatórios</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <h2>Pedidos</h2>
+    <section id="order-list"></section>
+  </main>
+  <script src="../js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => loadOrders());
+  </script>
+</body>
+</html>
